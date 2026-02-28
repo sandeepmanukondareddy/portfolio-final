@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Executive Portfolio Design System */
+    --background: 40 50% 99%;
+    --background-section: 40 25% 97%;
+    --background-card: 60 14% 95%;
+    --foreground: 0 0% 17%;
+
+    --card: 60 14% 95%;
+    --card-foreground: 0 0% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 17%;
+
+    /* Executive Brown */
+    --primary: 30 24% 44%;
+    --primary-foreground: 40 50% 99%;
+
+    /* Warm Bronze */
+    --secondary: 20 22% 53%;
+    --secondary-foreground: 40 50% 99%;
+
+    /* Cream Surface */
+    --muted: 40 25% 97%;
+    --muted-foreground: 0 0% 35%;
+
+    /* Gold Accent */
+    --accent: 42 50% 58%;
+    --accent-foreground: 0 0% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 90%;
+    --input: 40 15% 90%;
+    --ring: 30 24% 44%;
+
+    --radius: 0.5rem;
+
+    /* Chart Colors */
+    --chart-primary: 30 24% 44%;
+    --chart-secondary: 20 22% 53%;
+    --chart-success: 110 16% 40%;
+    --chart-warning: 42 50% 58%;
+
+    /* Dark section */
+    --dark-bg: 0 0% 17%;
+    --dark-fg: 40 25% 97%;
+
+    /* Subtle text */
+    --text-tertiary: 0 0% 54%;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+    --shadow-glow: 0 0 30px rgba(139,115,85,0.3);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', 'SF Pro Display', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+  }
+
+  .font-display {
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', 'SF Pro Display', sans-serif;
+  }
+
+  .font-data {
+    font-family: 'Space Grotesk', 'DM Sans', monospace;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-28;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(30 24% 44%), hsl(42 50% 58%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-dark-section {
+    background-color: hsl(var(--dark-bg));
+    color: hsl(var(--dark-fg));
+  }
+
+  .card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .bg-section {
+    background-color: hsl(var(--background-section));
+  }
+
+  .bg-card-surface {
+    background-color: hsl(var(--background-card));
+  }
+
+  .text-tertiary {
+    color: hsl(var(--text-tertiary));
+  }
+}

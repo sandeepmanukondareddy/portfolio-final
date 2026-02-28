@@ -1,0 +1,187 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - label: "All Content"
+        name: "site_json"
+        file: "public/content/site.json"
+        format: "json"
+        fields:
+          - { label: "Version", name: "version", widget: "string", required: false }
+          - label: "Hero Section"
+            name: "hero_section"
+            widget: "object"
+            fields:
+              - { label: "Full Name", name: "full_name", widget: "string" }
+              - { label: "Professional Title", name: "professional_title", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "LinkedIn URL", name: "linkedin_url", widget: "string" }
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Value", name: "value", widget: "number" }
+                  - { label: "Prefix", name: "prefix", widget: "string", required: false }
+                  - { label: "Suffix", name: "suffix", widget: "string", required: false }
+                  - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Executive Profile"
+            name: "executive_profile"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Content", name: "content", widget: "text" }
+
+          - label: "Career Trajectory"
+            name: "career_trajectory"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "string", required: false }
+              - label: "Timeline"
+                name: "timeline"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Year", name: "year", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Company", name: "company", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Core Expertise"
+            name: "core_expertise"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "string", required: false }
+              - label: "Areas"
+                name: "areas"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Performance Metrics"
+            name: "performance_metrics"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Metrics"
+                name: "metrics"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Value", name: "value", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text", required: false }
+
+          - label: "Sector Experience"
+            name: "sector_experience"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Sectors"
+                name: "sectors"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Leadership Philosophy"
+            name: "leadership_philosophy"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Principles"
+                name: "principles"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Digital Systems"
+            name: "digital_systems"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "Education & Certifications"
+            name: "education_certifications"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Institute", name: "institute", widget: "string", required: false }
+                  - { label: "Year", name: "year", widget: "string", required: false }
+                  - { label: "Description", name: "description", widget: "text", required: false }
+
+          - label: "Contact Section"
+            name: "contact_section"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "LinkedIn", name: "linkedin", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Copyright", name: "copyright", widget: "string", required: false }
+              - { label: "Disclaimer", name: "disclaimer", widget: "text", required: false }
+
+          - label: "Promotional Media"
+            name: "promotional_media"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string", required: false }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Type", name: "type", widget: "select", options: ["image", "video", "link"], default: "image" }
+                  - { label: "URL", name: "url", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text", required: false }
+
+          - label: "Site Assets"
+            name: "site_assets"
+            widget: "object"
+            fields:
+              - { label: "Logo URL", name: "logo_url", widget: "string", required: false }
+              - { label: "Favicon URL", name: "favicon_url", widget: "string", required: false }
+              - { label: "Hero Image URL", name: "hero_image_url", widget: "string", required: false }
+

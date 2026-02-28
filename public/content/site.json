@@ -1,0 +1,341 @@
+{
+  "version": "2025-02-18-v2",
+  "hero_section": {
+    "full_name": "SUMIT AGARWAL",
+    "professional_title": "Senior Sales & Distribution Leader | Go-To-Market | FMCG & Consumer Health (OTC) | 20+ Years' Experience",
+    "tagline": "Market Architecture | GT, MT, E-commerce | Digital Transformation | PAN India | P&L Ownership",
+    "location": "Hyderabad, India",
+    "phone": "+91 8008503991",
+    "email": "emailsumitagarwal@gmail.com",
+    "linkedin_url": "https://linkedin.com/in/sumitagarwal-avp",
+    "stats": [
+      {
+        "id": "stat_1",
+        "value": 20,
+        "suffix": "+",
+        "label": "Years Experience"
+      },
+      {
+        "id": "stat_2",
+        "value": 250,
+        "prefix": "₹",
+        "suffix": "Cr+",
+        "label": "Revenue Managed"
+      },
+      {
+        "id": "stat_3",
+        "value": 500,
+        "suffix": "+",
+        "label": "Teams Led"
+      }
+    ]
+  },
+  "executive_profile": {
+    "heading": "EXECUTIVE PROFILE:",
+    "content": "Senior Sales & Distribution Leader with 20+ years of experience building, scaling, and professionalizing FMCG and Consumer Health (OTC) businesses. Proven track record of Go-To-Market, Market entry, driving revenue growth, profitability, and cash discipline across GT, MT, and E-commerce, with deep expertise in distribution expansion, channel economics, and operating governance. Experienced in startup-to-scale journeys, PE-backed environments, and structured organizations; bringing a system-led, data-driven, and people-centric leadership approach."
+  },
+  "career_trajectory": {
+    "heading": "PROFESSIONAL EXPERIENCE:",
+    "description": "",
+    "timeline_points": [
+      {
+        "id": "t1",
+        "year": "2019 – Present",
+        "title": "Associate Vice President",
+        "company": "MED MANOR ORGANICS PVT. LTD.",
+        "level": 100,
+        "order": 1,
+        "description": "Hyderabad | Dec 2019 – Present (Joined as GM | Elevated to AVP in Jan 2024)",
+        "achievements": [
+          "Brands: MY Dr, ItchStop, Softwalk, Nokas, Swachpet, Orafree, Maya"
+        ],
+        "brands": []
+      },
+      {
+        "id": "t2",
+        "year": "2018 – 2019",
+        "title": "Head - Trade Marketing",
+        "company": "ANCHOR HEALTH & BEAUTY CARE PVT. LTD.",
+        "level": 85,
+        "order": 2,
+        "description": "Mumbai | Apr 2018 – Dec 2019",
+        "achievements": [
+          "Organization Scale: ₹250 Cr FMCG Consumer Health Business",
+          "Brands: Anchor Oral Care, Dyna Personal Care"
+        ],
+        "brands": []
+      },
+      {
+        "id": "t3",
+        "year": "2013 – 2018",
+        "title": "Deputy General Manager - Trade Marketing, Commercial & MT",
+        "company": "VISHAL PERSONAL CARE PVT. LTD. (PE-backed – Peepul Capital)",
+        "level": 75,
+        "order": 3,
+        "description": "Hyderabad | Jun 2013 – Mar 2018 (Joined as Trade Marketing Manager; MT and Commercial mandate added in Apr 2015)",
+        "achievements": [
+          "Brand: Banjara's (Acquired by Bajaj Consumer in 2025)"
+        ],
+        "brands": []
+      },
+      {
+        "id": "t4",
+        "year": "Early Career",
+        "title": "Sales Foundations",
+        "company": "PARLE PRODUCTS | PARAS PHARMACEUTICALS | DABUR INDIA | HINDUSTAN COCA-COLA BEVERAGES",
+        "level": 50,
+        "order": 4,
+        "description": "Built strong foundations across GT, MT, Key Accounts, and Trade Marketing with exposure to large-scale FMCG systems, execution rigor, and frontline sales leadership.",
+        "achievements": [],
+        "brands": []
+      }
+    ]
+  },
+  "core_expertise": {
+    "heading": "CORE EXPERTISE:",
+    "description": "",
+    "cards": [
+      {
+        "id": "e1",
+        "title": "Enterprise Sales & Distribution Leadership",
+        "mastery": 98,
+        "description": "GTM/RTM design, ABP, distribution expansion, primary and secondary sales execution at scale.",
+        "projects": "50+",
+        "impact": "₹1000Cr+",
+        "icon": "ShoppingCart",
+        "order": 1
+      },
+      {
+        "id": "e2",
+        "title": "P&L Ownership & Revenue Management",
+        "mastery": 95,
+        "description": "Revenue growth, margin expansion, cost-to-sales discipline, pricing, and credit control.",
+        "projects": "30+",
+        "impact": "₹250Cr+",
+        "icon": "TrendingUp",
+        "order": 2
+      },
+      {
+        "id": "e3",
+        "title": "Omni-Channel Strategy (GT, MT, E-commerce)",
+        "mastery": 92,
+        "description": "Assortment strategy, listings, margin management, CAC optimization, and channel economics.",
+        "projects": "25+",
+        "impact": "PAN India",
+        "icon": "Megaphone",
+        "order": 3
+      },
+      {
+        "id": "e4",
+        "title": "Trade Marketing & Market Activation",
+        "mastery": 96,
+        "description": "Schemes, incentives, BTL activation, Innovations, ROI, and AOP.",
+        "projects": "100+",
+        "impact": "15+ Brands",
+        "icon": "Users",
+        "order": 4
+      },
+      {
+        "id": "e5",
+        "title": "Organization & Capability Building",
+        "mastery": 90,
+        "description": "SOP-led execution, large team leadership, talent development, and startup scaling.",
+        "projects": "20+",
+        "impact": "500+ People",
+        "icon": "Target",
+        "order": 5
+      },
+      {
+        "id": "e6",
+        "title": "Digital Enablement & Performance Governance",
+        "mastery": 88,
+        "description": "SFA, MIS, dashboards, BI tools, decision-led reviews, AI-driven performance governance.",
+        "projects": "15+",
+        "impact": "28 States",
+        "icon": "BarChart3",
+        "order": 6
+      }
+    ]
+  },
+  "performance_metrics": {
+    "heading": "Performance Impact",
+    "description": "Quantifiable results across key business metrics",
+    "metrics": [
+      {
+        "id": "m1",
+        "label": "Revenue Growth",
+        "percentage": 85,
+        "order": 1
+      },
+      {
+        "id": "m2",
+        "label": "Market Expansion",
+        "percentage": 92,
+        "order": 2
+      },
+      {
+        "id": "m3",
+        "label": "Team Leadership",
+        "percentage": 88,
+        "order": 3
+      },
+      {
+        "id": "m4",
+        "label": "Strategic Execution",
+        "percentage": 95,
+        "order": 4
+      }
+    ]
+  },
+  "sector_experience": {
+    "heading": "DIVERSIFIED CATEGORY & SECTOR EXPERIENCE:",
+    "description": "",
+    "categories": [
+      {
+        "id": "s1",
+        "title": "FMCG – Food & Beverages",
+        "items": [
+          "Juices",
+          "CSD",
+          "Packaged Water",
+          "Biscuits",
+          "Snacks",
+          "Confectionery"
+        ],
+        "order": 1
+      },
+      {
+        "id": "s2",
+        "title": "FMCG – Personal & Home Care",
+        "items": [
+          "Skin",
+          "Oral",
+          "Hair",
+          "Home Care",
+          "Herbal Cosmetics",
+          "Deodorants"
+        ],
+        "order": 2
+      },
+      {
+        "id": "s3",
+        "title": "Consumer Health / OTC",
+        "items": [
+          "Pain Relief",
+          "Antifungal",
+          "Cough & Cold",
+          "Digestives",
+          "Foot Care",
+          "Body Supports"
+        ],
+        "order": 3
+      }
+    ]
+  },
+  "leadership_philosophy": {
+    "heading": "LEADERSHIP PHILOSOPHY:",
+    "description": "",
+    "principles": [
+      "System-led, metrics-driven decision making",
+      "High ownership with clear accountability models",
+      "Hands-on mentor for senior and frontline leaders",
+      "Bias for execution with long-term brand thinking"
+    ]
+  },
+  "digital_systems": {
+    "heading": "DIGITAL & SYSTEMS EXPOSURE:",
+    "description": "",
+    "technologies": [
+      {
+        "id": "d1",
+        "name": "ERP | SAP",
+        "order": 1
+      },
+      {
+        "id": "d2",
+        "name": "SFA Platforms",
+        "order": 2
+      },
+      {
+        "id": "d3",
+        "name": "BI Tools",
+        "order": 3
+      },
+      {
+        "id": "d4",
+        "name": "Advanced Excel",
+        "order": 4
+      }
+    ]
+  },
+  "education_certifications": {
+    "heading": "EDUCATION:",
+    "education": [
+      {
+        "id": "ed1",
+        "degree": "Bachelor of Commerce (B. Com)",
+        "year": "2002",
+        "institution": "",
+        "order": 1
+      }
+    ],
+    "certifications": [
+      {
+        "id": "c1",
+        "title": "Leadership & Organizational Effectiveness",
+        "description": "Executive exposure to people leadership, performance management, conflict resolution, and leading large, multi-layered teams.",
+        "order": 1
+      },
+      {
+        "id": "c2",
+        "title": "Strategic Sales, Distribution & Revenue Management",
+        "description": "Advanced perspectives on GTM/RTM, channel productivity, pricing discipline, margin optimization, and ROI-led trade marketing.",
+        "order": 2
+      },
+      {
+        "id": "c3",
+        "title": "Digital Enablement & Data-Led Execution",
+        "description": "Exposure to SFA adoption, MIS, dashboards, forecasting, and data-led performance reviews.",
+        "order": 3
+      },
+      {
+        "id": "c4",
+        "title": "Systems & Customer-Centric Thinking",
+        "description": "Flow optimization, Theory of Constraints, and backward goal-setting for customer-first execution.",
+        "order": 4
+      }
+    ]
+  },
+  "contact_section": {
+    "heading": "Get In Touch",
+    "description": "Let's discuss how we can create value together",
+    "phone": "+91 8008503991",
+    "email": "emailsumitagarwal@gmail.com",
+    "linkedin": "https://linkedin.com/in/sumitagarwal-avp",
+    "location": "Hyderabad, Telangana, India"
+  },
+  "footer": {
+    "copyright_text": " 2026 Sumit Agarwal. All Rights Reserved."
+  },
+  "promotional_media": {
+    "heading": "Latest Updates & Media",
+    "description": "Stay updated with the latest videos, posts, and media content.",
+    "media_items": []
+  },
+  "site_assets": {
+    "profile_photo_url": "",
+    "profile_photo_base64": "",
+    "favicon_url": ""
+  },
+  "email_settings": {
+    "heading": "Email Settings",
+    "description": "Configure email address to receive customer inquiries",
+    "recipient_email": "emailsumitagarwal@gmail.com",
+    "smtp_host": "",
+    "smtp_port": "",
+    "smtp_username": "",
+    "smtp_password": "",
+    "from_email": "",
+    "email_enabled": true
+  }
+}
