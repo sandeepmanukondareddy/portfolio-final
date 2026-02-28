@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Admin</title>
 
-    <!-- Netlify Identity Widget (fixes recovery/reset/confirm flows for SPA) -->
+    <!-- REQUIRED for Netlify Identity recovery/reset/confirm -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
@@ -13,17 +13,34 @@
     <!-- Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
-    <!-- After login, always go back to /admin/ -->
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
+      // If user clicks invite/reset link, Netlify appends #recovery_token=... to ANY page.
+      // We force the browser to load /admin/ so Identity widget can handle the token properly.
+      (function () {
+        const hash = window.location.hash || "";
+        const hasRecovery = hash.includes("recovery_token=");
+        const hasInvite = hash.includes("invite_token=");
+        const hasConfirm = hash.includes("confirmation_token=");
+
+        if ((hasRecovery || hasInvite || hasConfirm) && !window.location.pathname.startsWith("/admin")) {
+          window.location.replace("/admin/" + hash);
+          return;
+        }
+
+        if (window.netlifyIdentity) {
+          // If logged in, stay in admin
+          window.netlifyIdentity.on("login", function () {
+            document.location.href = "/admin/";
+          });
+
+          // If you land with recovery token, open the widget automatically
+          window.netlifyIdentity.on("init", function () {
+            if (hasRecovery || hasInvite || hasConfirm) {
+              window.netlifyIdentity.open();
+            }
+          });
+        }
+      })();
     </script>
   </body>
 </html>
