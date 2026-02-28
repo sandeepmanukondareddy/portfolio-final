@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin</title>
 
-    <!-- REQUIRED for Netlify Identity recovery/reset/confirm -->
+    <!-- Netlify Identity (required for Git Gateway login + recovery links) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
@@ -14,33 +14,20 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
-      // If user clicks invite/reset link, Netlify appends #recovery_token=... to ANY page.
-      // We force the browser to load /admin/ so Identity widget can handle the token properly.
-      (function () {
-        const hash = window.location.hash || "";
-        const hasRecovery = hash.includes("recovery_token=");
-        const hasInvite = hash.includes("invite_token=");
-        const hasConfirm = hash.includes("confirmation_token=");
+      // Handle login + recovery flows inside /admin
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          // If not logged in, stay on admin (shows login)
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
 
-        if ((hasRecovery || hasInvite || hasConfirm) && !window.location.pathname.startsWith("/admin")) {
-          window.location.replace("/admin/" + hash);
-          return;
-        }
-
-        if (window.netlifyIdentity) {
-          // If logged in, stay in admin
-          window.netlifyIdentity.on("login", function () {
-            document.location.href = "/admin/";
-          });
-
-          // If you land with recovery token, open the widget automatically
-          window.netlifyIdentity.on("init", function () {
-            if (hasRecovery || hasInvite || hasConfirm) {
-              window.netlifyIdentity.open();
-            }
-          });
-        }
-      })();
+        // Initialize Identity (this is what processes recovery_token links)
+        window.netlifyIdentity.init();
+      }
     </script>
   </body>
 </html>
