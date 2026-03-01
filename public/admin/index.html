@@ -1,32 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Admin</title>
 
-    <!-- Netlify Identity (required for Git Gateway login + recovery links) -->
+    <!-- Netlify Identity widget (required for login/reset/invite) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
 
   <body>
     <!-- Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script src="https://unpkg.com/decap-cms@3.8.0/dist/decap-cms.js"></script>
 
     <script>
-      // Handle login + recovery flows inside /admin
+      // After login, keep user inside admin
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          // If not logged in, stay on admin (shows login)
+        window.netlifyIdentity.on("init", function (user) {
           if (!user) {
-            window.netlifyIdentity.on("login", () => {
+            window.netlifyIdentity.on("login", function () {
               document.location.href = "/admin/";
             });
           }
         });
-
-        // Initialize Identity (this is what processes recovery_token links)
-        window.netlifyIdentity.init();
       }
     </script>
   </body>
