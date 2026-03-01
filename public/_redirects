@@ -1,11 +1,3 @@
-# ✅ Allow Decap to fetch its real config file
-/admin/config.yml  /admin/config.yml  200
-
-# ✅ Admin SPA route
+/admin  /admin/  301
 /admin/*  /admin/index.html  200
-
-# ✅ Do NOT rewrite Netlify Identity endpoints
-/.netlify/identity/*  /.netlify/identity/:splat  200
-
-# ✅ Your main SPA catch-all
 /*  /index.html  200
